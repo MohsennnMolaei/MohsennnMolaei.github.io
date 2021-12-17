@@ -43,7 +43,7 @@
 				alert('You have to enable the mike and the camera');
 			});
 		
-		const model = await tf.loadLayersModel('tfjs_model/model.json');
+
 
 		// process video
 		async function video_tagging() {
@@ -58,7 +58,7 @@
 			draw.fillStyle = "yellow";
 
 			// load the mobile-net model
-			const model = await mobilenet.load();
+			const model = await tf.loadLayersModel('tfjs_model/model.json');
 
 			while (1) {
 
