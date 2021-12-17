@@ -58,7 +58,8 @@
 			draw.fillStyle = "yellow";
 
 			// load the mobile-net model
-			const model = await tf.loadGraphModel('tfjs_model/model.json');
+			//const model = await tf.loadGraphModel('tfjs_model/model.json');
+			const model = await tf.loadLayersModel('tfjs_model/model.json');
 
 			while (1) {
 
