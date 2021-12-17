@@ -2,7 +2,7 @@
 
 <head>
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-	<script src="tfjs_model/model.json"> </script>
+
 
 </head>
 
@@ -42,7 +42,8 @@
 			catch(error => {
 				alert('You have to enable the mike and the camera');
 			});
-
+		
+		const model = await tf.loadLayersModel('tfjs_model/model.json');
 
 		// process video
 		async function video_tagging() {
